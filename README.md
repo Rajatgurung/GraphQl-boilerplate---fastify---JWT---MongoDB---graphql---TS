@@ -9,7 +9,11 @@ npm install
 2. Set up .env
 
 ```
-//copy example.env to .env and add below config
+//copy example.env to .env
+
+cp example.env .env
+
+///add below to .env
 
 JWT_SECRET=
 MONGO_URL=
