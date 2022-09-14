@@ -6,6 +6,12 @@
 npm install
 ```
 
+or
+
+```
+npm ci
+```
+
 2. Set up .env
 
 ```
