@@ -13,10 +13,11 @@ npm install
 
 cp example.env .env
 
-///add below to .env
+///add config like below 👇
 
-JWT_SECRET=
-MONGO_URL=
+JWT_SECRET=secret
+MONGO_URL=mongodb://localhost:27017/picode
+
 ```
 
 3. Make assets directory
