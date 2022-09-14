@@ -6,7 +6,7 @@ WORKDIR /code
 COPY package.json /code/package.json
 COPY package-lock.json /code/package-lock.json
 
-RUN npm install
+RUN npm ci
 RUN mkdir build 
 RUN mkdir build/assets 
 COPY . .
