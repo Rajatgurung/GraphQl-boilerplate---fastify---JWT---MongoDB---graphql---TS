@@ -53,7 +53,7 @@ expose at port (http://localhost)[http://localhost:5000]
 # For Docker Deployment 🛳 🚀
 
 ```
-docker-compose up -d
+docker-compose up
 ```
 
 expose at port (http://localhost)[http://localhost]
