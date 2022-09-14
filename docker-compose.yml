@@ -1,0 +1,22 @@
+version: '3'
+services:
+  mongo:
+    image: mongo
+    ports:
+      - 27017:27017
+    volumes:
+      - mongodb:/data/db
+  node:
+    build: .
+    ports:
+      - 80:5000
+    volumes:
+      - ./:/code
+    depends_on:
+      - mongo
+    environment:
+      - MONGO_URL=mongodb://mongo:27017/picode
+      - JWT_SECRET=secreat
+
+volumes:
+  mongodb:
